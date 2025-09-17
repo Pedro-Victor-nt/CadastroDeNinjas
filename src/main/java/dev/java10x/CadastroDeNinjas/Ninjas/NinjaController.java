@@ -50,7 +50,6 @@ public class NinjaController {
         }
     }
 
-
     // Alterar dados dos ninjas (UPDATE)
     @PutMapping("/alterar/{id}")
     public ResponseEntity<?> alterarNinjaPorId(@PathVariable Long id, @RequestBody NinjaDTO ninjaAtualizado) {
@@ -75,7 +74,6 @@ public class NinjaController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("O ninja com id " + id + " nao encontrado");
         }
-
     }
 
 }
